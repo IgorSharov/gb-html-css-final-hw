@@ -1,0 +1,82 @@
+footer
+  min-height: 350px
+  background-color: #373737
+  color: #fff
+  position: relative
+  h3
+    font-size: 18px
+    font-family: Raleway-ExtraBold
+  ul
+    list-style-type: none
+    margin: 30px 0 0 0
+    li
+      font-size: 12px
+      font-family: Roboto
+      line-height: 18px
+      a
+        text-decoration: none
+        color: #a8a8a8
+        &:hover
+          text-decoration: underline
+          color: white
+  p
+    color: #a8a8a8
+  input
+    display: inline-block
+    float: left
+    &[type="email"]
+      border-radius: 0
+      width: 70%
+      background-color: #fff51f
+  input+a
+    display: block
+    line-height: 34px
+    text-decoration: none
+    text-align: center
+    text-transform: uppercase
+    background-color: black
+    color: white
+    &:hover
+      text-decoration: none
+      color: white
+  #footer-payment
+    display: flex
+    flex-flow: row nowrap
+    justify-content: space-between
+    div
+      width: 36px
+      height: 22px
+      margin: 45px 0
+      background: url('../img/payment.gif') no-repeat 
+      &:nth-child(1)
+        background-position: 0px
+      &:nth-child(2)
+        background-position: -36px
+      &:nth-child(3)
+        background-position: -36px*2
+      &:nth-child(4)
+        background-position: -36px*3
+      &:nth-child(5)
+        background-position: -36px*4
+      &:nth-child(6)
+        background-position: -36px*5
+    a
+      +hide-text
+      display: block
+  #about
+    span
+      display: inline-block
+      float: left
+    a
+      color: #fff51f
+  #footer-copyright
+    position: absolute
+    bottom: 0
+    width: 100%
+    line-height: 50px
+    color: #a8a8a8
+    background-color: #333
+    font-family: Roboto
+    font-size: 12px
+    span
+      margin: 0 0 0 150px

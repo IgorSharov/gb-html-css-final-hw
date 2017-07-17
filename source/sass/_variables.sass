@@ -1,0 +1,39 @@
+$screen-sm-min: 768px
+$screen-md-min: 992px
+$screen-lg-min: 1200px
+
+$hover-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
+
+=top-right-triangle($text, $bg-color, $text-color)
+  &::before
+    content: '\A'
+    position: absolute
+    width: 0
+    height: 0
+    top: 0
+    right: 0
+    border-style: solid
+    border-width: 0 46px 46px 0
+    border-color: transparent $bg-color transparent transparent
+  &::after
+    content: $text
+    position: absolute
+    top: 10px
+    right: 5px
+    font-size: 9px
+    line-height: 9px
+    color: $text-color
+
+=hide-text
+  text-decoration: none
+  line-height: 0
+  font-size: 0
+  color: transparent
+  // text-indent: -9999px 
+  //Какой вариант лучше (в том числе для SEO)?
+  //При текущем вариенте происходит смещение. Почему?.
+
+=background-hover($color)
+  background-color: $color
+  &:hover        
+    background: rgba($color, 0.8) 
