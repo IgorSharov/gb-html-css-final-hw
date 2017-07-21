@@ -57,7 +57,9 @@ gulp.task('server', () => {
     browserSync.watch('deploy/**/*.*').on('change', browserSync.reload);
 });
 
-// gulp.task('default',
-//     gulp.series('rm', 'move:all', 'sass', 'imagemin', gulp.parallel('watch', 'server')));
+// Для разработки:
 gulp.task('default',
-    gulp.series('rm', 'move:all', 'sass', 'imagemin'));
+    gulp.series('rm', 'move:all', 'sass', 'imagemin', gulp.parallel('watch', 'server')));
+// Для релиза:
+// gulp.task('default',
+//     gulp.series('rm', 'move:all', 'sass', 'imagemin'));
