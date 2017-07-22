@@ -23,7 +23,5 @@
 ### Для запуска Gulp требуется
 1. Установить [Node.JS](https://nodejs.org/en/)
 2. В директории проекта выполнить  
-  ```
-  npm i  
-  npm run gulp
-  ```
+  `npm i`  
+  `npm run gulp`  
